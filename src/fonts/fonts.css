@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'NeueMontreal';
+    src: url('../fonts/neue-montreal/NeueMontreal-Bold.otf') format('opentype'),
+        url('../fonts/neue-montreal/NeueMontreal-Medium.otf') format('opentype'), 
+        url('../fonts/neue-montreal/NeueMontreal-Regular.otf') format('opentype');
+        font-weight: 200 700;
+
+}
