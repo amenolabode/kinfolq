@@ -48,6 +48,12 @@ const LandingPage = () => {
             among one another.
           </p>
         </div>
+        <div className="">
+          <iframe
+            src="https://www.youtube.com/embed/66XwG1CLHuU?autoplay=1&mute=1&playlist=66XwG1CLHuU&loop=1&controls=0"
+            className="w-full h-[720px] mt-[64px]"
+          ></iframe>
+        </div>
       </div>
     </div>
   );
