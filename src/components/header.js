@@ -1,9 +1,10 @@
-import { Drawer } from "@mui/material";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { paths } from "../utils/routes";
+import { Button } from "antd";
 
 export const Header = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const MobileSideNavItems = () => {
     return (
       <div className="flex justify-start  w-full h-full pl-[20px] pr-[100px] py-8 bg-black ">
@@ -16,8 +17,8 @@ export const Header = () => {
   };
 
   return (
-    <div className="fixed top-0 z-50 flex flex-col w-full h-auto ">
-      <div className="flex items-center justify-between w-full px-4 py-3 bg-black md:px-16">
+    <div className="fixed top-0 z-50 flex flex-col w-full h-auto border-b border-[#FAFAFA]/[.20]">
+      <div className="flex items-center justify-between w-full px-[64px] py-[16px] bg-black">
         {/* <Drawer
             // open={openNavBar}
             anchor={"left"}
@@ -27,15 +28,27 @@ export const Header = () => {
             {MobileSideNavItems()}
           </Drawer> */}
 
-        <img src="./assets/Kinfolq.png" alt="Logo" className="w-14 lg:w-20" />
+        <h1
+          className="text-white text-[32px] font-[700] "
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          Kinfolq
+        </h1>
 
-        <div className=" text-white items-center hidden flex justify-end items-center gap-8 flex-shrink-0 self-stretch">
-          {/* <Link to="/" className="text-white ">
-            Home
+        <div className="md:flex hidden text-white items-center space-x-8 justify-end text-[16px] font-[400]">
+          <Link to="/">
+            <h2 className="text-grey hover:text-white">Home</h2>
           </Link>
-          <Link to="/partner" className="text-white ">
-            Home
-          </Link> */}
+          <Link to="/">
+            <h2 className="text-grey hover:text-white">Agenda</h2>
+          </Link>
+          <Link to="/">
+            <h2 className="text-grey hover:text-white">Become a sponsor</h2>
+          </Link>
+          <div className="border bg-white h-6 opacity-25"></div>
+          <div className="px-[18px] py-[12px] bg-gold font-[500] rounded-[8px]">Buy tickets</div>
         </div>
       </div>
     </div>
