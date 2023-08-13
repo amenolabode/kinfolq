@@ -1,4 +1,6 @@
 export const paths = {
     HOME: '/',
-    PARTNER: '/partner'
+    PARTNER: '/partner',
+    AGENDA: '/agenda',
+    TICKET: '/ticket'
 }
