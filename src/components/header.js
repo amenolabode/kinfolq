@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { paths } from "../utils/routes";
-import { Button } from "antd";
-import { set } from "lodash";
 
 export const Header = () => {
   const [activePage, setActivePage] = useState("/");
