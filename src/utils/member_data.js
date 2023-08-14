@@ -2,7 +2,7 @@ export const members = [
   {
     imgSrc:
       "https://res.cloudinary.com/dqicwto8t/image/upload/w_400,q_auto/v1691934780/Kinfolq/members/Marcella_kjnccr.png",
-    name: "Marvella Imosimi",
+    name: "Marcella Imosimi",
     role: "SWE @ Ebay",
   },
   {
