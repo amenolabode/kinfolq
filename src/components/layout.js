@@ -10,7 +10,7 @@ const LayOut = ({ layOutContent, pageTitle }) => {
       <div className="w-full max-w-[2880px]">
         <div className="relative">
           <div className="bg-lightgray bg-center bg-cover bg-no-repeat h-[724px] overflow-hidden">
-            <img src={heroImage} alt="" className="w-full"/>
+            <img src={heroImage} alt="" className="w-full" />
           </div>
           <div className="absolute inset-0 bg-black opacity-40"></div>
           <div className="absolute top-[500px] text-[92px] inset-0 flex pl-[64px] text-white font-semibold tracking-[-3.68px] capitalize">

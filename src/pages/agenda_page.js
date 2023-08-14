@@ -1,15 +1,24 @@
 import React, { useState } from "react";
 import LayOut from "../components/layout";
 import { motion } from "framer-motion";
+import {
+  dayOneSchedule,
+  dayTwoSchedule,
+  dayThreeSchedule,
+} from "../utils/events_schedule_data";
+import { useNavigate } from "react-router-dom";
+import { paths } from "../utils/routes";
 
 const AgendaPage = () => {
   const [activeBar, setactiveBar] = useState("day_one");
+  const navigate = useNavigate();
+
   return (
     <LayOut
       pageTitle={"Agenda"}
       layOutContent={
         <>
-          <motion.div className="px-[64px] pt-[64px] bg-gold">
+          <motion.div className="px-[64px] py-[64px] bg-gold">
             <motion.div className="flex items-end gap-32 self-stretch">
               <h2 className="w-1/2 text-[60px] font-bold text-white leading-[112%]">
                 Our <br></br> Agenda
@@ -53,6 +62,76 @@ const AgendaPage = () => {
                 Day 3, Sunday September 17th
               </div>
             </motion.div>
+
+            {activeBar === "day_one" && (
+              <div className="py-[56px]">
+                <table className="w-full table-auto border">
+                  <thead className="">
+                    <tr className="border-b">
+                      <th className="text-left p-[24px]">TIME</th>
+                      <th className="text-left p-[24px]">EVENT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {dayOneSchedule.map((scheduleItem, index) => (
+                      <tr className="border-b" key={index}>
+                        <td className="p-[24px]">{scheduleItem.time}</td>
+                        <td className="p-[24px]">{scheduleItem.event}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+            {activeBar === "day_two" && (
+              <div className="py-[56px]">
+                <table className="w-full table-auto border">
+                  <thead className="">
+                    <tr className="border-b">
+                      <th className="text-left p-[24px]">TIME</th>
+                      <th className="text-left p-[24px]">EVENT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {dayTwoSchedule.map((scheduleItem, index) => (
+                      <tr className="border-b" key={index}>
+                        <td className="p-[24px]">{scheduleItem.time}</td>
+                        <td className="p-[24px]">{scheduleItem.event}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+            {activeBar === "day_three" && (
+              <div className="py-[56px]">
+                <table className="w-full table-auto border">
+                  <thead className="">
+                    <tr className="border-b">
+                      <th className="text-left p-[24px]">TIME</th>
+                      <th className="text-left p-[24px]">EVENT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {dayThreeSchedule.map((scheduleItem, index) => (
+                      <tr className="border-b" key={index}>
+                        <td className="p-[24px]">{scheduleItem.time}</td>
+                        <td className="p-[24px]">{scheduleItem.event}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            <div
+              className="px-[24px] py-[16px] bg-black font-[500] rounded-[8px] cursor-pointer w-fit "
+              onClick={() => {
+                navigate(paths.TICKET);
+              }}
+            >
+              Purchase a ticket
+            </div>
           </motion.div>
         </>
       }

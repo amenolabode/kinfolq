@@ -1,8 +1,30 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
 
 const ListComponent = ({ title, subtitle, bgColor, OnClick }) => {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
+  const mainControl = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      mainControl.start("visible");
+    }
+  }, [inView]);
+
   return (
-    <div onClick={OnClick} className={`${bgColor} px-[64px] py-[64px] group`}>
+    <motion.div
+      ref={ref}
+      variants={{
+        hidden: { opacity: 0, y: 75 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      initial="hidden"
+      animate={mainControl}
+      transition={{ duration: 0.5, delay: 0.5 }}
+      onClick={OnClick}
+      className={`${bgColor} px-[64px] py-[64px] group`}
+    >
       <div className="flex items-center justify-between">
         <span>
           <h2 className="text-[60px] font-[700] capitalize mb-[8px]">
@@ -30,7 +52,7 @@ const ListComponent = ({ title, subtitle, bgColor, OnClick }) => {
           </svg>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
