@@ -160,7 +160,7 @@ const LandingPage = () => {
                 <div className="h-[320px] w-[358px]">
                   <img
                     className="w-full h-full object-cover"
-                    src="https://res.cloudinary.com/dqicwto8t/image/upload/f_auto,q_auto/v1691972952/Kinfolq/members/people/5_pmgrxh.jpg"
+                    src="https://res.cloudinary.com/dqicwto8t/image/upload/w_1000,f_auto,q_auto/v1691972952/Kinfolq/members/people/5_pmgrxh.jpg"
                     alt=""
                   />
                 </div>
@@ -172,7 +172,7 @@ const LandingPage = () => {
                 <div className="h-[320px] w-[358px]">
                   <img
                     className="w-full h-full object-cover"
-                    src="https://res.cloudinary.com/dqicwto8t/image/upload/f_auto,q_auto/v1691972950/Kinfolq/members/people/1_owf3sr.jpg"
+                    src="https://res.cloudinary.com/dqicwto8t/image/upload/w_1000,f_auto,q_auto/v1691972950/Kinfolq/members/people/1_owf3sr.jpg"
                     alt=""
                   />
                 </div>
@@ -184,7 +184,7 @@ const LandingPage = () => {
                 <div className="h-[320px] w-[358px]">
                   <img
                     className="w-full h-full object-cover"
-                    src="https://res.cloudinary.com/dqicwto8t/image/upload/f_auto,q_auto/v1691972920/Kinfolq/members/people/2_gorkfp.jpg"
+                    src="https://res.cloudinary.com/dqicwto8t/image/upload/w_1000,f_auto,q_auto/v1691972920/Kinfolq/members/people/2_gorkfp.jpg"
                     alt=""
                   />
                 </div>
@@ -196,7 +196,7 @@ const LandingPage = () => {
                 <div className="h-[320px] w-[358px]">
                   <img
                     className="w-full h-full object-cover"
-                    src="https://res.cloudinary.com/dqicwto8t/image/upload/f_auto,q_auto/v1691972926/Kinfolq/members/people/3_gsmcga.jpg"
+                    src="https://res.cloudinary.com/dqicwto8t/image/upload/w_1000,f_auto,q_auto/v1691972926/Kinfolq/members/people/3_gsmcga.jpg"
                     alt=""
                   />
                 </div>
@@ -208,7 +208,7 @@ const LandingPage = () => {
                 <div className="h-[320px] w-[358px]">
                   <img
                     className="w-full h-full object-cover"
-                    src="https://res.cloudinary.com/dqicwto8t/image/upload/f_auto,q_auto/v1691972897/Kinfolq/members/people/4_rxkduw.jpg"
+                    src="https://res.cloudinary.com/dqicwto8t/image/upload/w_1000,f_auto,q_auto/v1691972897/Kinfolq/members/people/4_rxkduw.jpg"
                     alt=""
                   />
                 </div>

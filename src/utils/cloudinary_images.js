@@ -1,5 +1,5 @@
 export const heroImage =
-  "https://res.cloudinary.com/dqicwto8t/image/upload/f_auto,q_auto/v1691803140/4512ee901a65a245d8af0a8dcfa15d0a_c5u5sy.png";
+  "https://res.cloudinary.com/dqicwto8t/image/upload/w_5000,f_auto,q_auto/v1691803140/4512ee901a65a245d8af0a8dcfa15d0a_c5u5sy.png";
 
 export const imageUrls = [
   "https://res.cloudinary.com/dqicwto8t/image/upload/f_auto,q_auto/v1691930353/Kinfolq/whereTheyWork/27_xxnfex.png",
